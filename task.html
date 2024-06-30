@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project Task Manager</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <header>
+        <h1>Project Task Manager</h1>
+    </header>
+    <main>
+        <section id="task-form">
+            <h2>Add New Task</h2>
+            <form id="new-task-form">
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" required>
+
+                <label for="task-deadline">Deadline:</label>
+                <input type="date" id="task-deadline" required>
+
+                <label for="task-priority">Priority:</label>
+                <select id="task-priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+
+                <label for="task-label">Label:</label>
+                <input type="text" id="task-label">
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section id="task-list">
+            <h2>Task List</h2>
+            <div id="tasks">
+                <!-- Tasks will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Zenox</p>
+    </footer>
+    <script src="task.js"></script>
+</body>
+</html>
